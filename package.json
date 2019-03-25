@@ -1,0 +1,31 @@
+{
+    "name": "zumcoin-cryptonote-util",
+    "version": "1.2.1",
+    "main": "cryptonote",
+    "gypfile": true,
+    "author": {
+        "name": "LucasJones",
+        "email": "lucasjonesdev@hotmail.co.uk"
+    },
+    "contributors": [
+        "ZumCoin Developers <devs@zumcoin.org>"
+    ],
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zumcoin/zumcoin-cryptonote-util.git"
+    },
+    "scripts": {
+        "test": "node-gyp clean && node-gyp configure && node-gyp build && node test.js"
+    },
+    "dependencies": {
+        "bindings": "*",
+        "nan": "^2.11.1",
+        "safe-buffer": "^5.1.2"
+    },
+    "keywords": [
+        "cryptonight",
+        "cryptonote",
+        "zumcoin" 
+    ]
+}
